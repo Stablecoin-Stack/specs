@@ -26,7 +26,7 @@ A working prototype exists. This specification series formalises the protocol fo
 ## Start Here — By Audience
 
 ### Developers
-You want to build against the protocol — integrate a wallet, implement a processor, or deploy a Settlement Contract.
+You want to implement a processor, build a wallet, integrate a wallet or deploy a Settlement Contract.
 
 1. Read [SSF-SPEC-001 — System Overview](./ssf-spec-001/overview/) to understand the architecture.
 2. Read [SSF-SPEC-001 — Payment Submission](./ssf-spec-001/) for the client-side protocol.
@@ -78,7 +78,7 @@ ssf-spec-xxx/
 This project is in active development. Contributions are welcome across all profiles:
 
 - **Protocol review** — read the formal specifications and open an issue for any ambiguity, gap, or error you find.
-- **Implementation** — build against the spec and report any friction or missing detail.
+- **Implementation** — build a conformant implementation and report any friction or missing detail.
 - **Security audit** — review cryptographic assumptions and signature schemes.
 - **Legal and regulatory** — provide professional opinion on compliance considerations.
 >##
