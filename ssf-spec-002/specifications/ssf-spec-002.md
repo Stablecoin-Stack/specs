@@ -8,8 +8,11 @@
 | **Status** | Draft |
 | **Date** | 2026-03-10 |
 | **Conforms To** | SSF-SPEC-001 v1.0.0 |
-| **Author(s)** | Stablecoin Stack Foundation |
-| **Contact** | [spec@stablecoinstack.org](mailto:spec@stablecoinstack.org) |
+| **Author(s)** | Adalton Reis [reis@stablecoinstack.org](mailto:reis@stablecoinstack.org) |
+| **Reviewers** | — |
+| **Organization** | Stablecoin Stack Foundation |
+| **Contact** | [specs@stablecoinstack.org](mailto:spec@stablecoinstack.org) |
+| **Public Address** | `0x0000000000000000000000000000000000000000` |
 | **License** | Apache License 2.0 |
 
 ---

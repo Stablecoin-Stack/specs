@@ -19,10 +19,10 @@ license: Apache License 2.0
 | **Status** | Draft |
 | **Date** | 2026-03-04 |
 | **Supersedes** | SSF-SPEC-000, SSF-SPEC-001 (pre-unification), SSF-SPEC-002 (pre-unification) |
-| **Author(s)** | Adalton Reis \<reis@stablecoinstack.org\> |
+| **Author(s)** | Adalton Reis [reis@stablecoinstack.org](mailto:reis@stablecoinstack.org) |
 | **Reviewers** | — |
 | **Organization** | Stablecoin Stack Foundation |
-| **Contact** | contact@stablecoinstack.org |
+| **Contact** | [specs@stablecoinstack.org](mailto:spec@stablecoinstack.org) |
 | **Public Address** | `0x0000000000000000000000000000000000000000` |
 | **License** | Apache License 2.0 |
 
