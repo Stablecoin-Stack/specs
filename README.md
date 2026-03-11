@@ -71,15 +71,7 @@ ssf-spec-xxx/
   guides/            Step-by-step implementation tutorials
   governance/        Changelog and spec-level governance
 ```
-
-Shared governance (versioning policy, contribution guidelines) lives at the repository root:
-
-```
-governance/
-  versioning-policy.md
-  contributing.md
-```
-
+ 
 ---
 
 ## Contributing

@@ -66,7 +66,7 @@ The following are planned for subsequent specifications and are explicitly out o
 
 ## Status and Contributing
 
-All content in this repository is in **Draft** status. The Foundation actively seeks contributors across all profiles — protocol reviewers, implementers, security auditors, and legal and regulatory professionals. See [governance/contributing.md](../governance/contributing.md) for how to participate.
+All content in this repository is in **Draft** status. The Foundation actively seeks contributors across all profiles — protocol reviewers, implementers, security auditors, and legal and regulatory professionals. See [governance/contributing.md](https://github.com/Stablecoin-Stack/specs/blob/main/CONTRIBUTING.md) for how to participate.
 
 ---
 
