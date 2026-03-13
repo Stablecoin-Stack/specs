@@ -972,9 +972,9 @@ The following companion specifications are planned and will reference this docum
 
 | Planned ID | Subject |
 | ---------- | ------- |
-| SSF-SPEC-002 | Checkout Engine API — merchant-facing session and charge management |
+| SSF-SPEC-002 |wallet-gateway Interface |
 | SSF-SPEC-003 | Broadcast Layer Protocol — WebSocket protocol between wallet and wallet-gateway |
-| SSF-SPEC-004 | wallet-gateway Interface |
+| SSF-SPEC-004 |  Checkout Engine API — merchant-facing session and charge management |
 | SSF-SPEC-005 | broadcast-service Interface |
 | SSF-SPEC-006 | broadcast-submitter Interface |
 | SSF-SPEC-007 | transfer-history Interface |

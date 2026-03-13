@@ -1,5 +1,7 @@
 {
+    "label": "Formal Specification",
     "link": {
-        "type": "generated-index"
+        "type": "generated-index",
+        "slug": "/ssf-spec-001"
     }
 }

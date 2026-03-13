@@ -1,5 +1,7 @@
 {
+    "label": "Overview",
     "link": {
-        "type": "generated-index"
+        "type": "generated-index",
+        "slug": "/ssf-spec-002/overview"
     }
 }
