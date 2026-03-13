@@ -1,5 +1,6 @@
 {
     "label": "Business Model",
+    "position": 5,
     "link": {
         "type": "generated-index",
         "slug": "/ssf-spec-001/business-model"

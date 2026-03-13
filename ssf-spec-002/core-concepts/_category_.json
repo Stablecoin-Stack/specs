@@ -1,7 +1,8 @@
 {
     "label": "Core Concepts",
+    "position": 2,
     "link": {
         "type": "generated-index",
-        "slug": "/ssf-spec-001/core-concepts"
+        "slug": "/ssf-spec-002/core-concepts"
     }
 }
