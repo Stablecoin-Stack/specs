@@ -227,8 +227,8 @@ Payments that include your Acquirer ID in `ref` will trigger a `CommissionGenera
 
 ## Related Documents
 
-- [Fee Model](../../ssf-spec-002/core-concepts/fee-model.md) — acquiring fee mechanics
-- [Dual-Signature Pattern](../../ssf-spec-002/core-concepts/dual-signature-pattern.md) — why two signatures are required
+- [Fee Model](../../ss-spec-002/core-concepts/fee-model.md) — acquiring fee mechanics
+- [Dual-Signature Pattern](../../ss-spec-002/core-concepts/dual-signature-pattern.md) — why two signatures are required
 - [Payload Fields Reference](../reference/payload-fields.md) — field-level constraints
-- [SSF-SPEC-001, Section 8.2](../specifications/ssf-spec-001.md#82-acquirer-service-purchase--step-by-step) — normative step-by-step
-- [Contract Interface Reference](../../ssf-spec-002/reference/contract-interface.md#buyacquiringpack) — on-chain function spec
+- [SS-SPEC-001, Section 8.2](../specifications/ss-spec-001.md#82-acquirer-service-purchase--step-by-step) — normative step-by-step
+- [Contract Interface Reference](../../ss-spec-002/reference/contract-interface.md#buyacquiringpack) — on-chain function spec

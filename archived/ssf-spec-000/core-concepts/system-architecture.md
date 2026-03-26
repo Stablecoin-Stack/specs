@@ -25,7 +25,7 @@ A fully conformant Stablecoin Stack deployment consists of the following compone
 
 | Component | Role |
 |-----------|------|
-| **Settlement Contract** | The trust anchor of the system. Verifies permit and binding signatures, executes token transfers, distributes fees, and registers acquirers. Specified in SSF-SPEC-002. |
+| **Settlement Contract** | The trust anchor of the system. Verifies permit and binding signatures, executes token transfers, distributes fees, and registers acquirers. Specified in SS-SPEC-002. |
 
 ### Checkout Engine
 

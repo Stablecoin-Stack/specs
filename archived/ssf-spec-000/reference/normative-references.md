@@ -34,9 +34,9 @@ This document lists all external standards and specifications that are normative
 
 | Reference | Title | Status |
 |-----------|-------|--------|
-| SSF-SPEC-000 | The Stablecoin Stack: System Overview and Architecture | Draft |
-| SSF-SPEC-001 | Instant Payment With Permitted Token Transfer — Submission | Draft |
-| SSF-SPEC-002 | The Settlement Contract — Canonical | Draft |
+| SS-SPEC-000 | The Stablecoin Stack: System Overview and Architecture | Draft |
+| SS-SPEC-001 | Instant Payment With Permitted Token Transfer — Submission | Draft |
+| SS-SPEC-002 | The Settlement Contract — Canonical | Draft |
 
 ## Informative References
 

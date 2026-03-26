@@ -1,8 +1,8 @@
-# SSF-SPEC-000 — The Stablecoin Stack: System Overview and Architecture
+# SS-SPEC-000 — The Stablecoin Stack: System Overview and Architecture
 
 | Field | Value |
 |-------|-------|
-| **Document ID** | SSF-SPEC-000 |
+| **Document ID** | SS-SPEC-000 |
 | **Title** | The Stablecoin Stack: System Overview and Architecture |
 | **Version** | 1.0.0 |
 | **Status** | Draft |
@@ -64,8 +64,8 @@ The following documents are normative references for this specification. Where t
 | RFC 5246 | The Transport Layer Security (TLS) Protocol Version 1.2 |
 | RFC 8446 | The Transport Layer Security (TLS) Protocol Version 1.3 |
 | RFC 8705 | OAuth 2.0 Mutual-TLS Client Authentication |
-| [SSF-SPEC-001](../../01-instant-payment-with-permitted-token-transfer-submission/specifications/SSF-SPEC-001-submission.md) | Instant Payment With Permitted Token Transfer — Submission |
-| [SSF-SPEC-002](../../02-the-settlement-contract-canonical/specifications/SSF-SPEC-002-settlement-contract.md) | The Settlement Contract — Canonical |
+| [SS-SPEC-001](../../01-instant-payment-with-permitted-token-transfer-submission/specifications/SS-SPEC-001-submission.md) | Instant Payment With Permitted Token Transfer — Submission |
+| [SS-SPEC-002](../../02-the-settlement-contract-canonical/specifications/SS-SPEC-002-settlement-contract.md) | The Settlement Contract — Canonical |
 
 The key words **MUST**, **MUST NOT**, **REQUIRED**, **SHALL**, **SHOULD**, **RECOMMENDED**, **MAY**, and **OPTIONAL** in this document are to be interpreted as described in RFC 2119.
 
@@ -171,13 +171,13 @@ These constraints MUST be enforced at the contract code level. Compliance MUST b
 
 A **fully conformant** Stablecoin Stack deployment MUST include all of the following:
 
-- a deployed **Settlement Contract** that satisfies all requirements of SSF-SPEC-002;
-- a **Checkout Engine** (core-checkout-engine and checkout-public-widget) that satisfies the session lifecycle and Ephemeral Token requirements of this specification and SSF-SPEC-001;
-- a **Broadcast Layer** (broadcast-gateway, broadcast-service, broadcast-submitter) that validates payloads per SSF-SPEC-001 Section 7, queues submissions, and broadcasts transactions on-chain;
+- a deployed **Settlement Contract** that satisfies all requirements of SS-SPEC-002;
+- a **Checkout Engine** (core-checkout-engine and checkout-public-widget) that satisfies the session lifecycle and Ephemeral Token requirements of this specification and SS-SPEC-001;
+- a **Broadcast Layer** (broadcast-gateway, broadcast-service, broadcast-submitter) that validates payloads per SS-SPEC-001 Section 7, queues submissions, and broadcasts transactions on-chain;
 - a **transfer-history** service that monitors the Settlement Contract for `PermittedTransfer` events and delivers confirmations to the Checkout Engine after the required block confirmation depth; and
 - a **basic-data-server** instance that is accessible to compliant wallets and other system components.
 
-A **fully conformant Client Wallet** MUST satisfy all wallet requirements stated in SSF-SPEC-001 and this document. In particular, a conformant wallet:
+A **fully conformant Client Wallet** MUST satisfy all wallet requirements stated in SS-SPEC-001 and this document. In particular, a conformant wallet:
 
 - MUST construct Permit Signatures and Binding Signatures using EIP-712 with the correct domain separator;
 - MUST submit payloads exclusively over TLS;
@@ -186,7 +186,7 @@ A **fully conformant Client Wallet** MUST satisfy all wallet requirements stated
 
 ### 4.2 Partial Conformance
 
-Components MAY be implemented and deployed independently. A conformant Settlement Contract MAY be used with a non-reference Checkout Engine, provided that Checkout Engine satisfies the session and Ephemeral Token requirements stated in this document. A conformant wallet MAY interact with any deployment whose Settlement Contract and Broadcast Layer satisfy the interfaces specified in SSF-SPEC-001 and SSF-SPEC-002.
+Components MAY be implemented and deployed independently. A conformant Settlement Contract MAY be used with a non-reference Checkout Engine, provided that Checkout Engine satisfies the session and Ephemeral Token requirements stated in this document. A conformant wallet MAY interact with any deployment whose Settlement Contract and Broadcast Layer satisfy the interfaces specified in SS-SPEC-001 and SS-SPEC-002.
 
 Partial conformance MUST be declared explicitly by the implementer. The declaration MUST identify which specifications — and which versions of those specifications — are and are not satisfied.
 
@@ -196,8 +196,8 @@ The following companion specifications are part of the Stablecoin Stack specific
 
 | ID | Title | Status | Scope |
 |----|-------|--------|-------|
-| [SSF-SPEC-001](../../01-instant-payment-with-permitted-token-transfer-submission/specifications/SSF-SPEC-001-submission.md) | Instant Payment With Permitted Token Transfer — Submission | Draft | Payload structures, signing conventions, submission protocol, off-chain validation rules |
-| [SSF-SPEC-002](../../02-the-settlement-contract-canonical/specifications/SSF-SPEC-002-settlement-contract.md) | The Settlement Contract — Canonical | Draft | On-chain interface: state variables, events, functions, dual-signature pattern, security requirements |
+| [SS-SPEC-001](../../01-instant-payment-with-permitted-token-transfer-submission/specifications/SS-SPEC-001-submission.md) | Instant Payment With Permitted Token Transfer — Submission | Draft | Payload structures, signing conventions, submission protocol, off-chain validation rules |
+| [SS-SPEC-002](../../02-the-settlement-contract-canonical/specifications/SS-SPEC-002-settlement-contract.md) | The Settlement Contract — Canonical | Draft | On-chain interface: state variables, events, functions, dual-signature pattern, security requirements |
 
 Additional specifications are planned for:
 
@@ -205,7 +205,7 @@ Additional specifications are planned for:
 - the Broadcast Layer WebSocket protocol; and
 - the Basic Data Service API.
 
-All companion specifications conform to this document and MUST declare the version of SSF-SPEC-000 to which they apply.
+All companion specifications conform to this document and MUST declare the version of SS-SPEC-000 to which they apply.
 
 ---
 

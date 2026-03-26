@@ -32,7 +32,7 @@ A participant pays a one-time registration fee to become an Acquirer. The payloa
 
 ## What This Layer Covers
 
-The submission layer — defined in **SSF-SPEC-001** — governs everything between the client wallet and the Payment Processor API:
+The submission layer — defined in **SS-SPEC-001** — governs everything between the client wallet and the Payment Processor API:
 
 - how payloads are structured
 - what signatures must be produced and how
@@ -43,7 +43,7 @@ It does **not** cover smart-contract internals, checkout session management, or 
 ## Related Documents
 
 - [Permit-Based Payments](../core-concepts/permit-based-payments.md) — conceptual explanation of how gasless transfers work
-- [SSF-SPEC-001](../specifications/ssf-spec-001.md) — the full formal specification
+- [SS-SPEC-001](../specifications/ss-spec-001.md) — the full formal specification
 - [Submit a Payment](../guides/submit-a-payment.md) — step-by-step integration guide
 - [Buy an Acquiring Pack](../guides/buy-acquiring-pack.md) — step-by-step guide for acquirer registration
 - [Payload Fields Reference](../reference/payload-fields.md) — complete field-level reference

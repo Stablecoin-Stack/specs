@@ -2,11 +2,11 @@
 sidebar_position: 1
 ---
 
-# SSF-SPEC-001 — Instant Payment With Permitted Token Transfer - Submission
+# SS-SPEC-001 — Instant Payment With Permitted Token Transfer - Submission
 
 | Field              | Value                                                      |
 | ------------------ | ---------------------------------------------------------- |
-| **Document ID**    | SSF-SPEC-001                                               |
+| **Document ID**    | SS-SPEC-001                                               |
 | **Title**          | Instant Payment With Permitted Token Transfer - Submission |
 | **Version**        | 1.0.0                                                      |
 | **Status**         | Draft                                                      |

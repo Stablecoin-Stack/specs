@@ -248,6 +248,6 @@ On a `SEMANTIC_ERROR` with a nonce mismatch, re-fetch the nonce (Step 2) and ret
 ## Related Documents
 
 - [Permit-Based Payments](../core-concepts/permit-based-payments.md) — conceptual background
-- [Fee Model](../../ssf-spec-002/core-concepts/fee-model.md) — how fees are calculated
+- [Fee Model](../../ss-spec-002/core-concepts/fee-model.md) — how fees are calculated
 - [Payload Fields Reference](../reference/payload-fields.md) — field-level constraints
-- [SSF-SPEC-001, Section 8.1](../specifications/ssf-spec-001.md#81-payment-transfer--step-by-step) — normative step-by-step
+- [SS-SPEC-001, Section 8.1](../specifications/ss-spec-001.md#81-payment-transfer--step-by-step) — normative step-by-step

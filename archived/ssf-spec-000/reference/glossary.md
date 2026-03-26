@@ -26,7 +26,7 @@ The property that all steps of a payment — permit verification, token transfer
 A publicly accessible, read-only service that provides shared reference data: supported token list, Service Provider (Acquirer) registry, and processor public configuration. Designed to be operated as a shared public resource.
 
 **Binding Signature**
-An EIP-712 signature over the full operation parameters (token, beneficiary, amount, ref, deadline), produced by the payer and validated by the Settlement Contract. Authorises the processor to execute a specific payment or acquirer registration operation. One of the two signatures required by the dual-signature pattern. Corresponds to the `payWithPermitSig` field in SSF-SPEC-001.
+An EIP-712 signature over the full operation parameters (token, beneficiary, amount, ref, deadline), produced by the payer and validated by the Settlement Contract. Authorises the processor to execute a specific payment or acquirer registration operation. One of the two signatures required by the dual-signature pattern. Corresponds to the `payWithPermitSig` field in SS-SPEC-001.
 
 **Broadcast Layer**
 The set of off-chain services responsible for receiving, validating, queuing, submitting, and reporting the status of signed payment payloads. Comprises: broadcast-gateway, broadcast-service, broadcast-submitter, balance-and-history.
@@ -165,7 +165,7 @@ An operator who deploys and runs a conformant instance of the Stablecoin Stack. 
 An ERC-2612 off-chain authorisation that grants a specified spender the ability to transfer a specified amount of tokens from a token holder's account, without requiring an on-chain `approve()` transaction.
 
 **Permit Signature**
-An ERC-2612 typed-data signature over the permit parameters (owner, spender, value, nonce, deadline), produced by the token holder and validated by the ERC-2612 token contract. Authorises the Settlement Contract to call `permit()`. One of the two signatures required by the dual-signature pattern. Corresponds to the `permitSig` field in SSF-SPEC-001.
+An ERC-2612 typed-data signature over the permit parameters (owner, spender, value, nonce, deadline), produced by the token holder and validated by the ERC-2612 token contract. Authorises the Settlement Contract to call `permit()`. One of the two signatures required by the dual-signature pattern. Corresponds to the `permitSig` field in SS-SPEC-001.
 
 **Principal Amount**
 The token amount intended to reach the beneficiary after fee deduction. Equal to the total transfer amount minus all applicable fees.
@@ -188,7 +188,7 @@ A registered Acquirer who has opted in to public discovery via the basic-data-se
 The lifecycle context of a single Charge, from creation by the Checkout Engine through to settlement or expiry.
 
 **Settlement Contract**
-The on-chain Solidity smart contract that is the trust anchor of the Stablecoin Stack. Verifies permit and binding signatures, executes token transfers, distributes fees, and registers acquirers. Fully specified in SSF-SPEC-002.
+The on-chain Solidity smart contract that is the trust anchor of the Stablecoin Stack. Verifies permit and binding signatures, executes token transfers, distributes fees, and registers acquirers. Fully specified in SS-SPEC-002.
 
 **Stablecoin Stack**
 The full set of components, protocols, and interfaces specified by the Stablecoin Stack Foundation specification series, taken together.

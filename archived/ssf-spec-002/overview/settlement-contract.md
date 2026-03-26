@@ -35,11 +35,11 @@ Client Wallet
      │
      │  (signed payload over HTTPS)
      ▼
-Payment Processor API        ← SSF-SPEC-001
+Payment Processor API        ← SS-SPEC-001
      │
      │  (broadcast transaction)
      ▼
-Settlement Contract          ← SSF-SPEC-002  (this document's subject)
+Settlement Contract          ← SS-SPEC-002  (this document's subject)
      │
      ├── ERC-2612 Token Contract  (permit verification)
      └── Fee Recipients / Acquirer Balances
@@ -49,6 +49,6 @@ Settlement Contract          ← SSF-SPEC-002  (this document's subject)
 
 - [Fee Model](../core-concepts/fee-model.md) — how base fees and acquiring fees are calculated
 - [Dual-Signature Pattern](../core-concepts/dual-signature-pattern.md) — why two signatures are required and how they interact
-- [SSF-SPEC-002](../specifications/ssf-spec-002.md) — the full formal specification
+- [SS-SPEC-002](../specifications/ss-spec-002.md) — the full formal specification
 - [Contract Interface Reference](../reference/contract-interface.md) — all functions, parameters, and events
 - [Integrate the Settlement Contract](../guides/integrate-settlement-contract.md) — guide for processor operators

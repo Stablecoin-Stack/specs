@@ -1,6 +1,6 @@
-# Stablecoin Stack Foundation - Code of Conduct
+# Fabric Payment Standards Fundation - Code of Conduct
 
-All participants in the **Stablecoin Stack Foundation** community are expected to **treat each other with respect and professionalism**. This applies to all repositories, discussions, issues, pull requests, tutorials, and any public communication channels.
+All participants in the **Fabric Payment Standards Fundation** community are expected to **treat each other with respect and professionalism**. This applies to all repositories, discussions, issues, pull requests, tutorials, and any public communication channels.
 
 ---
 
@@ -51,7 +51,7 @@ Violations may result in:
 
 This Code of Conduct applies to:
 
-- All repositories under the **Stablecoin Stack Foundation**
+- All repositories under the **Fabric Payment Standards Fundation**
 - GitHub issues, pull requests, and discussions
 - Tutorials, documentation, and guides
 - Public communications, meetings, or presentations representing the foundation
@@ -66,6 +66,6 @@ This Code of Conduct applies to:
 
 ---
 
-By participating in the **Stablecoin Stack Foundation**, you agree to follow this Code of Conduct.  
+By participating in the **Fabric Payment Standards Fundation**, you agree to follow this Code of Conduct.  
 
 > Our goal: **build a professional, welcoming, and sustainable ecosystem** where contributors focus on advancing the protocol and community.

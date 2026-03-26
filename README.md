@@ -1,6 +1,6 @@
 # Stablecoin Stack Foundation — Specification Repository
 
-The Stablecoin Stack Foundation publishes open, implementation-neutral specifications for stablecoin payment infrastructure on Ethereum-compatible networks. This repository is the authoritative source for all SSF specifications and their supporting documentation.
+The Stablecoin Stack Foundation publishes open, implementation-neutral specifications for stablecoin payment infrastructure on Ethereum-compatible networks. This repository is the authoritative source for all SS specifications and their supporting documentation.
 
 All specifications are in **Draft** status. We are actively seeking contributors, reviewers, and institutional partners. See [Contributing](#contributing) below.
 
@@ -18,8 +18,8 @@ A working prototype exists. This specification series formalises the protocol fo
 
 | ID | Title | Status | Description |
 | -- | ----- | ------ | ----------- | 
-| [SSF-SPEC-001](./ssf-spec-001/) | Stablecoin Stack Specification | Draft |The foundational specification of the **Stablecoin Stack** — an open architecture for processing stablecoin payments on Ethereum-compatible networks. |
-| [SSF-SPEC-002](./ssf-spec-002/) |  Wallet-gateway Interface Specification | Draft | This specification defines the normative interface that a conformant wallet-gateway MUST implement, and that a conformant wallet client MUST be capable of consuming|
+| [SS-SPEC-001](./ss-001/) | Stablecoin Stack Specification | Draft |The foundational specification of the **Stablecoin Stack** — an open architecture for processing stablecoin payments on Ethereum-compatible networks. |
+| [SS-SPEC-002](./ss-spec-002/) |  Wallet-gateway Interface Specification | Draft | This specification defines the normative interface that a conformant wallet-gateway MUST implement, and that a conformant wallet client MUST be capable of consuming|
 
 ---
 
@@ -28,32 +28,32 @@ A working prototype exists. This specification series formalises the protocol fo
 ### Developers
 You want to implement a processor, build a wallet, integrate a wallet or deploy a Settlement Contract.
 
-1. Read [SSF-SPEC-001 — System Overview](./ssf-spec-001/overview/) to understand the architecture.
-2. Read [SSF-SPEC-001 — Payment Submission](./ssf-spec-001/) for the client-side protocol.
-3. Read [SSF-SPEC-002 — Settlement Contract](./ssf-spec-002/) for the on-chain interface.
-4. Use the [guides](./ssf-spec-001/guides/) to walk through implementation step by step.
+1. Read [SS-SPEC-001 — System Overview](./ss-001/overview/) to understand the architecture.
+2. Read [SS-SPEC-001 — Payment Submission](./ss-001/) for the client-side protocol.
+3. Read [SS-SPEC-002 — Settlement Contract](./ss-spec-002/) for the on-chain interface.
+4. Use the [guides](./ss-001/guides/) to walk through implementation step by step.
 
 ### Institutions
 You are evaluating the protocol for adoption, integration, or investment.
 
-1. Read [SSF-SPEC-001 — Introduction](./ssf-spec-001/overview/) for system scope and design rationale.
-2. Read [Why Cryptographic Payments](./ssf-spec-001/core-concepts/) for the motivation and design philosophy.
-3. Review the [Architecture Overview](./ssf-spec-001/core-concepts/) for component boundaries and trust model.
+1. Read [SS-SPEC-001 — Introduction](./ss-001/overview/) for system scope and design rationale.
+2. Read [Why Cryptographic Payments](./ss-001/core-concepts/) for the motivation and design philosophy.
+3. Review the [Architecture Overview](./ss-001/core-concepts/) for component boundaries and trust model.
 
 ### Auditors
 You are assessing cryptographic correctness, security model, or protocol conformance.
 
-1. Start with [SSF-SPEC-001 — Formal Specification](./ssf-spec-001/specifications/ssf-spec-001.md) for the submission protocol.
-2. Continue with [SSF-SPEC-002 — Formal Specification](./ssf-spec-002/specifications/ssf-spec-002.md) for the on-chain contract interface.
-3. Review [Security Considerations](./ssf-spec-001/specifications/ssf-spec-001.md#10-security-considerations) in each spec.
-4. See [Normative References](./ssf-spec-001/reference/normative-references.md) for all cited standards.
+1. Start with [SS-SPEC-001 — Formal Specification](./ss-001/specifications/ss-001.md) for the submission protocol.
+2. Continue with [SS-SPEC-002 — Formal Specification](./ss-spec-002/specifications/ss-spec-002.md) for the on-chain contract interface.
+3. Review [Security Considerations](./ss-001/specifications/ss-001.md#10-security-considerations) in each spec.
+4. See [Normative References](./ss-001/reference/normative-references.md) for all cited standards.
 
 ### Regulators
 You are reviewing the protocol for compliance, consumer protection, or systemic risk assessment.
 
-1. Read [SSF-SPEC-001 — Introduction](./ssf-spec-001/overview/) for scope and purpose.
-2. Read [System Architecture](./ssf-spec-001/core-concepts/) for custody model and participant roles.
-3. Review [Security Considerations](./ssf-spec-002/specifications/ssf-spec-002.md#9-security-considerations) for non-custodial guarantees and administrative privilege boundaries.
+1. Read [SS-SPEC-001 — Introduction](./ss-001/overview/) for scope and purpose.
+2. Read [System Architecture](./ss-001/core-concepts/) for custody model and participant roles.
+3. Review [Security Considerations](./ss-spec-002/specifications/ss-spec-002.md#9-security-considerations) for non-custodial guarantees and administrative privilege boundaries.
 
 ---
 
@@ -62,7 +62,7 @@ You are reviewing the protocol for compliance, consumer protection, or systemic 
 Each specification is self-contained under its own folder, organised into six layers:
 
 ```
-ssf-spec-xxx/
+ss-spec-xxx/
   overview/          Quick orientation — what the spec covers and why it exists
   core-concepts/     Mental models and conceptual understanding
   specifications/    Formal normative definitions (the spec itself)

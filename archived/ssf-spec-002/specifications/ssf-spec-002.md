@@ -2,11 +2,11 @@
 sidebar_position: 2
 ---
 
-# SSF-SPEC-002 — The Settlement Contract - Canonical
+# SS-SPEC-002 — The Settlement Contract - Canonical
 
 | Field              | Value                                        |
 | ------------------ | -------------------------------------------- |
-| **Document ID**    | SSF-SPEC-002                                 |
+| **Document ID**    | SS-SPEC-002                                 |
 | **Title**          | The Settlement Contract — Canonical          |
 | **Version**        | 1.0.0                                        |
 | **Status**         | Draft                                        |
@@ -27,7 +27,7 @@ sidebar_position: 2
 2. [Introduction](#2-introduction)
    - 2.1 [Purpose](#21-purpose)
    - 2.2 [Scope](#22-scope)
-   - 2.3 [Relation to SSF-SPEC-001](#23-relation-to-ssf-spec-001)
+   - 2.3 [Relation to SS-SPEC-001](#23-relation-to-ss-spec-001)
    - 2.4 [Normative References](#24-normative-references)
    - 2.5 [Conventions and Terminology](#25-conventions-and-terminology)
 3. [Design Principles](#3-design-principles)
@@ -86,19 +86,19 @@ This specification covers:
 - the complete interface of each public and external function, including parameter semantics, preconditions, postconditions, and revert conditions; and
 - the dual-signature verification pattern used to bind off-chain payment authorisations to on-chain execution.
 
-This specification does not cover the off-chain payload construction and submission protocol (addressed in [SSF-SPEC-001](../../ssf-spec-001/specifications/ssf-spec-001.md)), the checkout engine session lifecycle, the merchant dashboard, or deployment and upgrade procedures.
+This specification does not cover the off-chain payload construction and submission protocol (addressed in [SS-SPEC-001](../../ss-spec-001/specifications/ss-spec-001.md)), the checkout engine session lifecycle, the merchant dashboard, or deployment and upgrade procedures.
 
-### 2.3 Relation to SSF-SPEC-001
+### 2.3 Relation to SS-SPEC-001
 
-[SSF-SPEC-001](../../ssf-spec-001/specifications/ssf-spec-001.md) defines how a client constructs, signs, and submits a payment or acquirer registration payload to the Payment Processor API. The present specification defines what the Settlement Contract does once the Payment Processor broadcasts that payload on-chain. The two documents are complementary and MUST be read together to understand the full conformance surface of the Stablecoin Stack.
+[SS-SPEC-001](../../ss-spec-001/specifications/ss-spec-001.md) defines how a client constructs, signs, and submits a payment or acquirer registration payload to the Payment Processor API. The present specification defines what the Settlement Contract does once the Payment Processor broadcasts that payload on-chain. The two documents are complementary and MUST be read together to understand the full conformance surface of the Stablecoin Stack.
 
-Terminology established in SSF-SPEC-001 — including **Acquirer**, **Permit**, **Relayer**, **Payload ID**, and **Binding Signature** — is adopted without redefinition in this document. Where this specification introduces additional terms, they are defined in Section 2.5.
+Terminology established in SS-SPEC-001 — including **Acquirer**, **Permit**, **Relayer**, **Payload ID**, and **Binding Signature** — is adopted without redefinition in this document. Where this specification introduces additional terms, they are defined in Section 2.5.
 
 ### 2.4 Normative References
 
 | Reference                    | Description                                                |
 | ---------------------------- | ---------------------------------------------------------- |
-| [SSF-SPEC-001](../../ssf-spec-001/specifications/ssf-spec-001.md) | Instant Payment With Permitted Token Transfer — Submission |
+| [SS-SPEC-001](../../ss-spec-001/specifications/ss-spec-001.md) | Instant Payment With Permitted Token Transfer — Submission |
 | ERC-20                       | Token Standard — Ethereum Improvement Proposal 20          |
 | ERC-2612                     | Permit Extension for EIP-20 Signed Approvals               |
 | EIP-712                      | Typed Structured Data Hashing and Signing                  |
@@ -113,11 +113,11 @@ The key words **MUST**, **MUST NOT**, **REQUIRED**, **SHALL**, **SHOULD**, **REC
 | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Settlement Contract | The on-chain smart contract specified by this document. Responsible for permit verification, token transfer, fee distribution, and acquirer registration.                                                                   |
 | Administrator       | The privileged account that controls operational parameters of the Settlement Contract (fees, pricing, fee recipient). The Administrator MUST NOT have the ability to move user funds.                                      |
-| Acquirer            | A registered participant entitled to a share of the processing fee on payments they referred. Defined in SSF-SPEC-001.                                                                                                      |
+| Acquirer            | A registered participant entitled to a share of the processing fee on payments they referred. Defined in SS-SPEC-001.                                                                                                      |
 | Acquirer ID         | A 16-byte (`bytes16`) UUID uniquely identifying an acquirer within the system. Referred to as `referral` in the contract's storage mapping for legacy reasons; the canonical term in all specifications is **Acquirer ID**. |
 | Zero-UUID           | The acquirer ID composed entirely of zero bytes (`0x00000000000000000000000000000000`). Represents the absence of an acquirer on a given payment.                                                                           |
-| Permit Signature    | The ERC-2612 signature authorising the Settlement Contract to call `permit()` on the token contract. Corresponds to `permitSig` in SSF-SPEC-001.                                                                            |
-| Binding Signature   | The EIP-712 signature over the operation parameters, authorising the processor to submit the specific operation. Corresponds to `payWithPermitSig` in SSF-SPEC-001.                                                         |
+| Permit Signature    | The ERC-2612 signature authorising the Settlement Contract to call `permit()` on the token contract. Corresponds to `permitSig` in SS-SPEC-001.                                                                            |
+| Binding Signature   | The EIP-712 signature over the operation parameters, authorising the processor to submit the specific operation. Corresponds to `payWithPermitSig` in SS-SPEC-001.                                                         |
 | Principal Amount    | The token amount intended to reach the beneficiary before fee deduction.                                                                                                                                                    |
 | Total With Fees     | The total token amount that must be held by the payer, equal to the principal amount plus all applicable fees.                                                                                                              |
 | Base Fee            | The minimum fee charged by the processor on every transfer, expressed as an absolute token unit amount.                                                                                                                     |
@@ -252,7 +252,7 @@ event CommissionGenerated(
 
 **Notes on event usage:**
 
-- `PermittedTransfer` is the primary event consumed by the checkout engine for session reconciliation. The `orderReference` field MUST match the `ref` value submitted in the `TransferRequest` payload defined in SSF-SPEC-001, Section 6.2.
+- `PermittedTransfer` is the primary event consumed by the checkout engine for session reconciliation. The `orderReference` field MUST match the `ref` value submitted in the `TransferRequest` payload defined in SS-SPEC-001, Section 6.2.
 - `AcquirerCreated` replaces the earlier draft name `AcquirringCreated`. The parameter formerly named `feeValue` is renamed `feePercent` for clarity, as it represents a rate, not an absolute amount.
 - `CommissionGenerated` replaces the earlier draft name `CommissonGenerated`.
 
@@ -494,7 +494,7 @@ function getAcquiringWallet(
 
 ## 8. Dual-Signature Pattern
 
-The Settlement Contract enforces a **dual-signature pattern** on both `transferWithPermit` and `buyAcquiringPack`. This pattern is defined conceptually in SSF-SPEC-001, Section 6.1, and is implemented on-chain as described here.
+The Settlement Contract enforces a **dual-signature pattern** on both `transferWithPermit` and `buyAcquiringPack`. This pattern is defined conceptually in SS-SPEC-001, Section 6.1, and is implemented on-chain as described here.
 
 Each operation requires two independent ECDSA signatures:
 
@@ -554,7 +554,7 @@ This specification follows [Semantic Versioning 2.0.0](https://semver.org). Vers
 
 | Version | Date       | Author       | Summary                                                                                                                                                                                                                                                                                            |
 | ------- | ---------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1.0.0   | 2026-03-04 | Adalton Reis | Initial release. Terminology aligned with SSF-SPEC-001: `acquirring` → `acquiring`, `distributor` → `acquirer`, `referral` identifier → `acquirerId`, `breakdowTransferAmount` → `breakdownTransferAmount`, `AcquirringCreated` → `AcquirerCreated`, `CommissonGenerated` → `CommissionGenerated`. |
+| 1.0.0   | 2026-03-04 | Adalton Reis | Initial release. Terminology aligned with SS-SPEC-001: `acquirring` → `acquiring`, `distributor` → `acquirer`, `referral` identifier → `acquirerId`, `breakdowTransferAmount` → `breakdownTransferAmount`, `AcquirringCreated` → `AcquirerCreated`, `CommissonGenerated` → `CommissionGenerated`. |
 
 ---
 

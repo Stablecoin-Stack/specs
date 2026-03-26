@@ -90,6 +90,6 @@ This provides operation-level replay protection that is independent of and compl
 
 ## Related Documents
 
-- [Permit-Based Payments](../../ssf-spec-001/core-concepts/permit-based-payments.md) — the broader gasless payment model
-- [SSF-SPEC-001, Section 6.1](../../ssf-spec-001/specifications/ssf-spec-001.md#61-two-signature-pattern) — normative definition
-- [SSF-SPEC-002, Section 8](../specifications/ssf-spec-002.md#8-dual-signature-pattern) — on-chain implementation
+- [Permit-Based Payments](../../ss-spec-001/core-concepts/permit-based-payments.md) — the broader gasless payment model
+- [SS-SPEC-001, Section 6.1](../../ss-spec-001/specifications/ss-spec-001.md#61-two-signature-pattern) — normative definition
+- [SS-SPEC-002, Section 8](../specifications/ss-spec-002.md#8-dual-signature-pattern) — on-chain implementation

@@ -25,9 +25,9 @@ The Stablecoin Stack makes this model practical for commerce by combining:
 | Reader | What to read |
 |--------|-------------|
 | Anyone wanting to understand the system | Start here, then [Why Cryptographic Payments](../core-concepts/why-cryptographic-payments.md) |
-| Developers building a wallet or integration | [System Architecture](../core-concepts/system-architecture.md), then [SSF-SPEC-001](../specifications/SSF-SPEC-000-system-overview.md) |
-| Smart-contract engineers | [SSF-SPEC-002](../../02-the-settlement-contract-canonical/specifications/SSF-SPEC-002-settlement-contract.md) |
-| Auditors and security reviewers | [Security Model](../specifications/SSF-SPEC-000-system-overview.md#security-model) and [Threat Model](../core-concepts/system-architecture.md#trust-boundaries) |
+| Developers building a wallet or integration | [System Architecture](../core-concepts/system-architecture.md), then [SS-SPEC-001](../specifications/SS-SPEC-000-system-overview.md) |
+| Smart-contract engineers | [SS-SPEC-002](../../02-the-settlement-contract-canonical/specifications/SS-SPEC-002-settlement-contract.md) |
+| Auditors and security reviewers | [Security Model](../specifications/SS-SPEC-000-system-overview.md#security-model) and [Threat Model](../core-concepts/system-architecture.md#trust-boundaries) |
 | Contributors | [Governance](../governance/versioning-policy.md) |
 
 ---
@@ -59,9 +59,9 @@ The following are explicitly not addressed by this specification series:
 
 | ID | Title | Layer | Status |
 |----|-------|-------|--------|
-| SSF-SPEC-000 | The Stablecoin Stack: System Overview and Architecture | This document | Draft |
-| [SSF-SPEC-001](../../01-instant-payment-with-permitted-token-transfer-submission/specifications/SSF-SPEC-001-submission.md) | Instant Payment With Permitted Token Transfer — Submission | Protocol | Draft |
-| [SSF-SPEC-002](../../02-the-settlement-contract-canonical/specifications/SSF-SPEC-002-settlement-contract.md) | The Settlement Contract — Canonical | On-chain | Draft |
+| SS-SPEC-000 | The Stablecoin Stack: System Overview and Architecture | This document | Draft |
+| [SS-SPEC-001](../../01-instant-payment-with-permitted-token-transfer-submission/specifications/SS-SPEC-001-submission.md) | Instant Payment With Permitted Token Transfer — Submission | Protocol | Draft |
+| [SS-SPEC-002](../../02-the-settlement-contract-canonical/specifications/SS-SPEC-002-settlement-contract.md) | The Settlement Contract — Canonical | On-chain | Draft |
 
 ---
 

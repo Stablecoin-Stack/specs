@@ -1,6 +1,6 @@
 # Contributing to Stablecoin Stack
 
-Welcome! This document explains how to contribute to the **Stablecoin Stack Foundation** repositories.
+Welcome! This document explains how to contribute to the **Fabric Payment Standards Fundation** repositories.
 
 We organize our work following the **Layered Docs model**:
 

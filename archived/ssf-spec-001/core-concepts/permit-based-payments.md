@@ -80,5 +80,5 @@ ERC-2612 maintains a per-owner nonce on each token contract. Each permit consume
 ## Related Documents
 
 - [Payment Submission](../overview/payment-submission.md) — overview of the submission flow
-- [Dual-Signature Pattern](../../ssf-spec-002/core-concepts/dual-signature-pattern.md) — deeper look at the two-signature model
-- [SSF-SPEC-001](../specifications/ssf-spec-001.md) — formal specification of payloads and signatures
+- [Dual-Signature Pattern](../../ss-spec-002/core-concepts/dual-signature-pattern.md) — deeper look at the two-signature model
+- [SS-SPEC-001](../specifications/ss-spec-001.md) — formal specification of payloads and signatures

@@ -13,7 +13,7 @@ For narrative descriptions of how components interact, see [System Architecture]
 | Field | Value |
 |-------|-------|
 | **Category** | On-chain |
-| **Governing Specification** | SSF-SPEC-002 |
+| **Governing Specification** | SS-SPEC-002 |
 | **Conformance** | Required for a fully conformant stack |
 
 The Settlement Contract is the on-chain trust anchor of the Stablecoin Stack. It is the only component whose correctness can be verified without trusting any operator. All payment value flows through it.
@@ -35,7 +35,7 @@ The Settlement Contract is the on-chain trust anchor of the Stablecoin Stack. It
 | Field | Value |
 |-------|-------|
 | **Category** | Checkout Engine |
-| **Governing Specification** | SSF-SPEC-000 (this document series), SSF-SPEC-001 |
+| **Governing Specification** | SS-SPEC-000 (this document series), SS-SPEC-001 |
 | **Conformance** | Required for a fully conformant stack |
 
 The central service for merchant payment session management.
@@ -52,7 +52,7 @@ The central service for merchant payment session management.
 | Field | Value |
 |-------|-------|
 | **Category** | Checkout Engine |
-| **Governing Specification** | SSF-SPEC-000 |
+| **Governing Specification** | SS-SPEC-000 |
 | **Conformance** | Required for a fully conformant stack |
 
 The hosted payment page that delivers session details to the wallet.
@@ -68,7 +68,7 @@ The hosted payment page that delivers session details to the wallet.
 | Field | Value |
 |-------|-------|
 | **Category** | Checkout Engine — Infrastructure |
-| **Governing Specification** | SSF-SPEC-000 |
+| **Governing Specification** | SS-SPEC-000 |
 | **Conformance** | Required for a fully conformant stack |
 
 Internal Certificate Authority for mTLS certificate lifecycle management.
@@ -82,7 +82,7 @@ Internal Certificate Authority for mTLS certificate lifecycle management.
 | Field | Value |
 |-------|-------|
 | **Category** | Checkout Engine — Infrastructure |
-| **Governing Specification** | SSF-SPEC-000 |
+| **Governing Specification** | SS-SPEC-000 |
 | **Conformance** | Required for a fully conformant stack |
 
 Issues JWT bearer tokens for API access within the mTLS context.
@@ -92,7 +92,7 @@ Issues JWT bearer tokens for API access within the mTLS context.
 | Field | Value |
 |-------|-------|
 | **Category** | Checkout Engine — Infrastructure |
-| **Governing Specification** | SSF-SPEC-000 |
+| **Governing Specification** | SS-SPEC-000 |
 | **Conformance** | Required for a fully conformant stack |
 
 Administrative service for certificate and user lifecycle management.
@@ -102,7 +102,7 @@ Administrative service for certificate and user lifecycle management.
 | Field | Value |
 |-------|-------|
 | **Category** | Checkout Engine — Merchant UI |
-| **Governing Specification** | SSF-SPEC-000 |
+| **Governing Specification** | SS-SPEC-000 |
 | **Conformance** | Required for a fully conformant stack |
 
 Merchant-facing web interface for account management, real-time order monitoring, and reporting.
@@ -116,22 +116,22 @@ Merchant-facing web interface for account management, real-time order monitoring
 | Field | Value |
 |-------|-------|
 | **Category** | Broadcast Layer |
-| **Governing Specification** | SSF-SPEC-000, SSF-SPEC-001 |
+| **Governing Specification** | SS-SPEC-000, SS-SPEC-001 |
 | **Conformance** | Required for a fully conformant stack |
 
 External entry point for wallet connections.
 
 **Key requirements:**
-- MUST accept `TransferRequest` and `BuyAcquiringPackRequest` payloads as defined in SSF-SPEC-001.
+- MUST accept `TransferRequest` and `BuyAcquiringPackRequest` payloads as defined in SS-SPEC-001.
 - MUST maintain persistent WebSocket connections to deliver real-time status updates.
-- MUST apply all validation rules defined in SSF-SPEC-001 Section 7 before forwarding to the broadcast-service.
+- MUST apply all validation rules defined in SS-SPEC-001 Section 7 before forwarding to the broadcast-service.
 
 ### broadcast-service
 
 | Field | Value |
 |-------|-------|
 | **Category** | Broadcast Layer |
-| **Governing Specification** | SSF-SPEC-000 |
+| **Governing Specification** | SS-SPEC-000 |
 | **Conformance** | Required for a fully conformant stack |
 
 Submission lifecycle management and status reporting.
@@ -146,7 +146,7 @@ Submission lifecycle management and status reporting.
 | Field | Value |
 |-------|-------|
 | **Category** | Broadcast Layer |
-| **Governing Specification** | SSF-SPEC-000 |
+| **Governing Specification** | SS-SPEC-000 |
 | **Conformance** | Required for a fully conformant stack |
 
 The Relayer. Holds the funded account that pays gas.
@@ -161,7 +161,7 @@ The Relayer. Holds the funded account that pays gas.
 | Field | Value |
 |-------|-------|
 | **Category** | Broadcast Layer |
-| **Governing Specification** | SSF-SPEC-000 |
+| **Governing Specification** | SS-SPEC-000 |
 | **Conformance** | Required for a fully conformant stack |
 
 Real-time wallet balance and history service.
@@ -179,7 +179,7 @@ Real-time wallet balance and history service.
 | Field | Value |
 |-------|-------|
 | **Category** | Event Indexing |
-| **Governing Specification** | SSF-SPEC-000 |
+| **Governing Specification** | SS-SPEC-000 |
 | **Conformance** | Required for a fully conformant stack |
 
 On-chain event monitor and confirmation oracle.
@@ -195,7 +195,7 @@ On-chain event monitor and confirmation oracle.
 | Field | Value |
 |-------|-------|
 | **Category** | Shared Infrastructure |
-| **Governing Specification** | SSF-SPEC-000 |
+| **Governing Specification** | SS-SPEC-000 |
 | **Conformance** | Required for a fully conformant stack |
 
 Public reference data service.
@@ -216,7 +216,7 @@ Public reference data service.
 | Field | Value |
 |-------|-------|
 | **Category** | Client |
-| **Governing Specification** | SSF-SPEC-001 |
+| **Governing Specification** | SS-SPEC-001 |
 | **Conformance** | Required for a fully conformant client |
 
 Any application that constructs and submits compliant payment payloads.

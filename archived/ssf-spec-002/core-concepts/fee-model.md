@@ -98,6 +98,6 @@ Separate from the per-payment fee model, registering as an Acquirer requires a o
 ## Related Documents
 
 - [Settlement Contract](../overview/settlement-contract.md) — overview
-- [SSF-SPEC-002, Section 6](../specifications/ssf-spec-002.md#6-fee-model) — normative fee model definition
+- [SS-SPEC-002, Section 6](../specifications/ss-spec-002.md#6-fee-model) — normative fee model definition
 - [Contract Interface Reference](../reference/contract-interface.md#calculatefees) — function signatures
-- [Submit a Payment](../../ssf-spec-001/guides/submit-a-payment.md) — how to apply this in practice
+- [Submit a Payment](../../ss-spec-001/guides/submit-a-payment.md) — how to apply this in practice

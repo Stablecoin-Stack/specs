@@ -2,7 +2,7 @@
 
 This guide walks through the complete lifecycle of a stablecoin payment step by step, from the perspective of each actor in the system. It is written for developers building or integrating with any component of the Stablecoin Stack.
 
-For the conceptual narrative, see [The Payment Flow](../core-concepts/payment-flow.md). For the normative payload and signing requirements, see [SSF-SPEC-001](../specifications/SSF-SPEC-000-system-overview.md).
+For the conceptual narrative, see [The Payment Flow](../core-concepts/payment-flow.md). For the normative payload and signing requirements, see [SS-SPEC-001](../specifications/SS-SPEC-000-system-overview.md).
 
 ---
 
@@ -233,4 +233,4 @@ The balance-and-history service detects the confirmed transfer and delivers a fi
 | `CRYPTOGRAPHIC_ERROR` | Off-chain, Phase C | Re-sign. The digest or signer did not match. Ensure the correct domain separator is used for each signature. |
 | `BROADCAST_ERROR` | On-chain, Phase D | The transaction reverted on-chain. The session is not settled. Investigate the revert reason. Do not mark the session as complete. |
 
-For the normative definition of each error category, see SSF-SPEC-001 Section 9.
+For the normative definition of each error category, see SS-SPEC-001 Section 9.

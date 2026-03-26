@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Payload Fields Reference
 
-Flat field-level reference for all structures and payload types defined in SSF-SPEC-001. For normative rules see [SSF-SPEC-001](../specifications/ssf-spec-001.md).
+Flat field-level reference for all structures and payload types defined in SS-SPEC-001. For normative rules see [SS-SPEC-001](../specifications/ss-spec-001.md).
 
 ---
 
@@ -50,7 +50,7 @@ Nested inside `PayWithPermitParams` and `BuyAcquiringPackPermitParams`.
 ref (32 bytes) = orderReference (16 bytes) || acquirerId (16 bytes)
 ```
 
-When either part "../../../ssf-spec-001/reference"is absent, fill with zeros:
+When either part "../../../ss-spec-001/reference"is absent, fill with zeros:
 
 | Scenario                        | `ref` value                                          |
 | ------------------------------- | ---------------------------------------------------- |

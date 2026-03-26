@@ -207,4 +207,4 @@ if (recoveredSigner.toLowerCase() !== owner.toLowerCase()) {
 - [Fee Model](../core-concepts/fee-model.md) — how fees are computed
 - [Dual-Signature Pattern](../core-concepts/dual-signature-pattern.md) — signature verification logic
 - [Contract Interface Reference](../reference/contract-interface.md) — complete function and event reference
-- [SSF-SPEC-002](../specifications/ssf-spec-002.md) — normative contract specification
+- [SS-SPEC-002](../specifications/ss-spec-002.md) — normative contract specification

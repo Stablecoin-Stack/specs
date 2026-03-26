@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Contract Interface Reference
 
-Flat technical reference for all public and external functions, events, and state variables of the Settlement Contract. For normative definitions see [SSF-SPEC-002](../specifications/ssf-spec-002.md).
+Flat technical reference for all public and external functions, events, and state variables of the Settlement Contract. For normative definitions see [SS-SPEC-002](../specifications/ss-spec-002.md).
 
 ---
 
